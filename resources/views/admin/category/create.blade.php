@@ -38,7 +38,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="image">Image</label>
-                        <input class="form-control" type="file" name="image">
+                        <input required class="form-control" type="file" name="image">
                     </div>
 
                     <h6>SEO Tage</h6>

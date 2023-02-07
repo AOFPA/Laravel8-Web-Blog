@@ -60,6 +60,7 @@
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
 
+
     {{-- DataTable --}}
 
     <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
@@ -78,6 +79,8 @@
             $('.dropdown-toggle').dropdown();
         });
     </script>
+
+    @yield('script')
 
 </body>
 

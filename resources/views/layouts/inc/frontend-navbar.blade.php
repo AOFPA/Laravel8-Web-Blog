@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 d-flex">
-                <img src="{{ asset('assets/images/logo.jpg') }}" style="max-width: 50px" class="w-100" alt="logo">
-                <h3 class="text-danger my-auto ms-2">AOFPA WEBIT</h3>
+                {{-- <img src="{{ asset('assets/images/logo.jpg') }}" style="max-width: 50px" class="w-100" alt="logo"> --}}
+                <h3 class="text-danger my-auto ms-2">AOFPA <span class="text-dark">OF WEB IT</span></h3>
             </div>
             <div class="col-md-8 my-auto">
                 <div class="p-2 border text-center">

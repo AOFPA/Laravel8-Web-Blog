@@ -33,6 +33,8 @@
         <main class="">
             @yield('content')
         </main>
+
+        @include('layouts.inc.frontend-footer')
     </div>
 
 
@@ -42,23 +44,29 @@
 
     <script>
         $(document).ready(function() {
-            $('.owl-nav').removeClass('disabled');
-        })
-        $('.category-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
+
+            $('.category-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
                 }
-            }
+            })
+
+            $('.owl-nav').removeClass('disabled');
+
+            $('.owl-nav>button').click(function() {
+                $('.owl-nav').removeClass('disabled');
+            })
         })
     </script>
 
