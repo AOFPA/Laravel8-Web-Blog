@@ -9,7 +9,9 @@
     <div class="container-fluid px-4">
         <div class="card mt-4">
             <div class="card-header">
-                <h4 class="mt-4">Edit Category</h4>
+                <h4 class="mt-4">Edit Category
+                    <a href="{{ url('admin/category') }}" class="btn btn-secondary btn-sm float-end">BACK</a>
+                </h4>
             </div>
             <div class="card-body">
 
@@ -36,7 +38,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="description">Description</label>
-                        <textarea class="form-control" type="text" name="description" row="3">{{ $category->description }}</textarea>
+                        <textarea id="mysummernote" class="form-control" type="text" name="description" row="3">{{ $category->description }}</textarea>
                     </div>
                     <div class="mb-3">
                         <label for="image">Image</label>
