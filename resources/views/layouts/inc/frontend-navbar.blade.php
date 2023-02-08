@@ -1,4 +1,4 @@
-<div class="global-navbar">
+<div class="global-navbar bg-white">
     <div class="container">
         <div class="row">
             <div class="col-md-4 d-flex">
@@ -12,7 +12,8 @@
             </div>
         </div>
     </div>
-
+</div>
+<div class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-green">
         <div class="container">
 
@@ -46,5 +47,4 @@
             </div>
         </div>
     </nav>
-
 </div>
