@@ -42,6 +42,16 @@
                                 href="{{ url('tutorial/' . $cateitem->slug) }}">{{ $cateitem->name }}</a>
                         </li>
                     @endforeach
+
+                    @if (Auth::check())
+                        <li class="nav-item bg-primary">
+                            <a class="nav-link" href="{{ route('logout') }}"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Logout</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </li>
+                    @endif
                 </ul>
 
             </div>

@@ -12,9 +12,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/' , [App\Http\Controllers\Frontend\FrontendController::class , 'index']);
-
 Route::get('tutorial/{category_slug}' , [App\Http\Controllers\Frontend\FrontendController::class , 'viewCategoryPost']);
 Route::get('tutorial/{category_slug}/{post_slug}' , [App\Http\Controllers\Frontend\FrontendController::class , 'viewPost']);
+
+// Comment System routes
+Route::post('comments', [App\Http\Controllers\Frontend\CommentController::class,'store']);
+Route::post('delete-comment', [App\Http\Controllers\Frontend\CommentController::class,'destroy']);
 
 
 Route::prefix('admin')->middleware(['auth' , 'isAdmin'])->group(function() {
