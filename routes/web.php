@@ -44,4 +44,8 @@ Route::prefix('admin')->middleware(['auth' , 'isAdmin'])->group(function() {
     Route::get('users', [\App\Http\Controllers\Admin\UserController::class , 'index']);
     Route::get('users/{user_id}', [\App\Http\Controllers\Admin\UserController::class , 'edit']);
     Route::put('update-user/{user_id}', [\App\Http\Controllers\Admin\UserController::class , 'update']);
+
+
+    Route::get('setting', [\App\Http\Controllers\Admin\SettingController::class , 'index']);
+    Route::post('setting', [\App\Http\Controllers\Admin\SettingController::class , 'savedata']);
 });

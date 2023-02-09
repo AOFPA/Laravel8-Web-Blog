@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'AOFPA WEB IT')
-@section('meta_description', 'AOFPA WEB IT')
-@section('meta_keyword', 'AOFPA WEB IT')
+@section('title', "$setting->meta_title")
+@section('meta_description', "$setting->meta_description")
+@section('meta_keyword', "$setting->meta_keywords")
 
 @section('content')
     {{-- Hero Section --}}

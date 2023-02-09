@@ -2,7 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 d-flex">
-                {{-- <img src="{{ asset('assets/images/logo.jpg') }}" style="max-width: 50px" class="w-100" alt="logo"> --}}
+                @php
+                    $setting = App\Models\Setting::find(1);
+                @endphp
+                <img src="{{ asset('uploads/setting/' . $setting->logo) }}" style="max-width: 50px" class="w-100"
+                    alt="logo">
                 <h3 class="text-danger my-auto ms-2">AOFPA <span class="text-dark">OF WEB IT</span></h3>
             </div>
             <div class="col-md-8 my-auto">

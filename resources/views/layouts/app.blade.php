@@ -14,6 +14,13 @@
     <meta name="keywords" content="@yield('meta_keyword')">
     <meta name="author" content="Chokchai Jamnoi">
 
+    @php
+        $setting = App\Models\Setting::find(1);
+    @endphp
+    @if ($setting)
+        <link rel="shortcut icon" href="{{ asset('uploads/setting/' . $setting->logo) }}" type="image/x-icon">
+    @endif
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
